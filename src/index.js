@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
 console.log(validator);
-alert('Hola mundo')
+alert('Hola')
 
 function capturarDatos(){
     const nombre=document.getElementById("inputNombre" ).value
@@ -14,7 +14,6 @@ function capturarDatos(){
     
       }
 
- 
     console.log(nombre)
     console.log(tarjeta)
     console.log(isArray)
