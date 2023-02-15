@@ -1,7 +1,7 @@
 import validator from './validator.js';
 
 console.log(validator);
-alert('Hola')
+alert('Hola Mundo')
 
 function capturarDatos(){
     const nombre=document.getElementById("inputNombre" ).value
