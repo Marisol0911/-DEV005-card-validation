@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pagos Facil</h1>
+      <p>Ahora pagar tus facturas es mas facil </p>
+    </header>
+    <main>
+      <form action="" id="formularioValidacion" class="formulario">
+
+        <div class="IngresoNombre">
+          
+        <label for="inputNombre"> Nombre</label>
+        <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+    </div>
+    <div class="IngresoNumero">
+          
+      <label for="inputNumero"> Numero Tarjeta</label>
+      <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+  </div>
+  <div class="ImgTarjetas">
+    <div class="logo"><img src="Imag/logoAmerica.png" alt="logoAmerica" sizes="40px"></div>
+    <div class="logo"><img src="Imag/logoMasterCard.png" alt="logoMasterCard" ></div>
+    <div class="logo"><img src="Imag/logoVisa.png" alt="LogoVisa" ></div>
+  </div>
+       <div class="btnValidacion"> 
+        <button type="button" onclick="capturarDatos()"> Pagar </button>
+  </div>
+    </form>
+    </main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
