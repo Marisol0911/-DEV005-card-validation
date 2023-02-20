@@ -1,7 +1,7 @@
 const validator = {
-
- 
+  
   isValid: function (num){
+    
   
     let cardNumberArray = splitIntoArray(num);
     let positionSum = 0;
@@ -23,15 +23,24 @@ const validator = {
           positionSum += multiplication;
           console.log("valor a sumar" + positionSum);
         }
-      } else {
+    } else {
         console.log("es impar");
         positionSum += cardNumberArray[i];
       }
     }
     let final = positionSum % 10;
     console.log(final);
+  
+    
+  },
+
+  maskify: function (num){
+    alert('Hola mundo')
+  
   }
+
 }
+
 
   
   // Util function: split string into array of number
@@ -49,12 +58,15 @@ const validator = {
       number = Math.floor(number / 10);
     }
     return sumOfDigits;
-    return (validator)
+  
+   
+    return (validator);
+   
+  
 
-    
-};
+  }
 
-
-
+  
 
 export default validator;
+  

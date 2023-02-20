@@ -4,6 +4,7 @@ const name1 = document.getElementById("name");
 const card = document.getElementById("number");
 const respuesta = document.getElementById("result");
 const btn = document.getElementById("btnPay");
+const imp=document.getElementById("result");
 console.log(btn);
 
 function printValidation(){
@@ -17,14 +18,11 @@ function printValidation(){
     }
 }
 
-/*function observetheCard(){
+function observetheCard(){
     const cardNumber = document.getElementById("number").value;
-    const cardNumber= document.getElementById("number").innerHTML;
-     cardNumber.innerHTML = validator.maskify(cardNumber)
-
-console.log('BLABLABLABLABLABLA',cardNumber)
-}*/
-
+    imp.innerHTML = validator.maskify(cardNumber)
+    console.log('Hola',cardNumber)
+}
 
   //Se captura el evento
 btn.addEventListener("click", printValidation);
