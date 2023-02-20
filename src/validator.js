@@ -1,10 +1,9 @@
 const validator = {
 
+ 
   isValid: function (num){
   
-  
- 
-    let cardNumberArray = splitIntoArray(cardNumber);
+    let cardNumberArray = splitIntoArray(num);
     let positionSum = 0;
     let sumaPositionimpar = 0;
   
@@ -50,10 +49,10 @@ const validator = {
       number = Math.floor(number / 10);
     }
     return sumOfDigits;
-  
+    return (validator)
 
+    
 };
-
 
 
 

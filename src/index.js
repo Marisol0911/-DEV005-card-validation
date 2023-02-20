@@ -17,15 +17,15 @@ function printValidation(){
     }
 }
 
-function observetheCard(){
+/*function observetheCard(){
+    const cardNumber = document.getElementById("number").value;
     const cardNumber= document.getElementById("number").innerHTML;
      cardNumber.innerHTML = validator.maskify(cardNumber)
 
 console.log('BLABLABLABLABLABLA',cardNumber)
-}
+}*/
 
 
   //Se captura el evento
 btn.addEventListener("click", printValidation);
 console.log(validator);
-
