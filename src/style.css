@@ -13,7 +13,7 @@ p{
     max-width: 700px;
     text-align: center;
 }
-.formulario{
+#form{
     background-color: antiquewhite;
     width: 100%;
     max-width: 700px;
@@ -40,7 +40,7 @@ img {
   width: 100%;
 }
 button{
-    border: 2px solid papayawhip;
+    border: 2px solid rgb(196, 39, 91);
     font-size: 16px;
     height: 50px;
     width: 100%;

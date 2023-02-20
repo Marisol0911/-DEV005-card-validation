@@ -1,24 +1,31 @@
 import validator from './validator.js';
+// elementos del DOM
+const name1 = document.getElementById("name");
+const card = document.getElementById("number");
+const respuesta = document.getElementById("result");
+const btn = document.getElementById("btnPay");
+console.log(btn);
 
-console.log(validator);
-alert('Hola Mundo')
-
-function capturarDatos(){
-    const nombre=document.getElementById("inputNombre" ).value
-    const tarjeta=document.getElementById("inputNumero" ).value
-    const isArray= tarjeta.split('')
-    const tarjetaReverse = tarjeta.split('').reverse()/Imag/logoVisa.png
-    const posicion= tarjetaReverse
-    for (let i  = 0;; ) {
-        n += i;
-    
-      }
-
-    console.log(nombre)
-    console.log(tarjeta)
-    console.log(isArray)
-    console.log(tarjetaReverse)
-      
+function printValidation(){
+    const cardNumber = document.getElementById("number").value;
+    const validateCard = validator.isValid(cardNumber)
+    console.log('BLABLABLABLABLABLA', validateCard)
+    if(validateCard===true){
+        respuesta.innerHTML= 'Tu tarjeta es valida'
+    }else {
+        respuesta.innerHTML= 'Tu tarjeta es invalida'
+    }
 }
 
-window.capturarDatos = capturarDatos;
+function observetheCard(){
+    const cardNumber= document.getElementById("number").innerHTML;
+     cardNumber.innerHTML = validator.maskify(cardNumber)
+
+console.log('BLABLABLABLABLABLA',cardNumber)
+}
+
+
+  //Se captura el evento
+btn.addEventListener("click", printValidation);
+console.log(validator);
+
