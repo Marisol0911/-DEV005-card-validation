@@ -4,26 +4,26 @@ const name1 = document.getElementById("name");
 const card = document.getElementById("number");
 const respuesta = document.getElementById("result");
 const btn = document.getElementById("btnPay");
-const imp=document.getElementById("result");
 console.log(btn);
 
 function printValidation(){
     const cardNumber = document.getElementById("number").value;
     const validateCard = validator.isValid(cardNumber)
     console.log('BLABLABLABLABLABLA', validateCard)
-    if(validateCard===true){
+    if(validateCard===0){
         respuesta.innerHTML= 'Tu tarjeta es valida'
     }else {
         respuesta.innerHTML= 'Tu tarjeta es invalida'
     }
 }
 
-function observetheCard(){
-    const cardNumber = document.getElementById("number").value;
+/*function observetheCard(){
+    const imp=document.getElementById("result").value;
     imp.innerHTML = validator.maskify(cardNumber)
-    console.log('Hola',cardNumber)
-}
+    console.log('hola',imp)
+}*/
 
   //Se captura el evento
 btn.addEventListener("click", printValidation);
+/*btnSee.addEventListener("click",observetheCard);*/
 console.log(validator);

@@ -30,14 +30,21 @@ const validator = {
     }
     let final = positionSum % 10;
     console.log(final);
-  
-    
+    return (final);
   },
 
-  maskify: function (num){
-    alert('Hola mundo')
-  
-  }
+  /*maskify: function (num){
+    const cubrir = ''
+    const cardNumberArray = cardNumberArray.toString()
+    for(let  i= 0; i<cardNumberArray.length; i++){
+    if(i<4){
+    cubrir = cubrir + cardNumberArray[i]
+  }else{
+      cubrir = cubrir = '#'
+
+    }
+    console.log(cubrir)
+  }*/
 
 }
 
