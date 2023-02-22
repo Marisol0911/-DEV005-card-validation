@@ -1,29 +1,31 @@
-import validator from './validator.js';
+import validator from "./validator.js";
+
 // elementos del DOM
 const name1 = document.getElementById("name");
-const card = document.getElementById("number");
+const cardNumber = document.getElementById("number");
 const respuesta = document.getElementById("result");
 const btn = document.getElementById("btnPay");
-console.log(btn);
+const btnSee = document.getElementById("btnSee");
+const number = document.getElementById("numberCard");
 
-function printValidation(){
-    const cardNumber = document.getElementById("number").value;
-    const validateCard = validator.isValid(cardNumber)
-    console.log('BLABLABLABLABLABLA', validateCard)
-    if(validateCard===0){
-        respuesta.innerHTML= 'Tu tarjeta es valida'
-    }else {
-        respuesta.innerHTML= 'Tu tarjeta es invalida'
-    }
+function printValidation() {
+  const cardNumber = document.getElementById("number").value;
+  const validateCard = validator.isValid(cardNumber);
+  console.log("BLABLABLABLABLABLA", validateCard);
+  if (validateCard === 0) {
+    respuesta.innerHTML = "Tu tarjeta es valida";
+  } else {
+    respuesta.innerHTML = "Tu tarjeta es invalida";
+  }
 }
 
-/*function observetheCard(){
-    const imp=document.getElementById("result").value;
-    imp.innerHTML = validator.maskify(cardNumber)
-    console.log('hola',imp)
-}*/
+function observetheCard() {
+  const number = document.getElementById("numberCard").value;
+  const coverNumber = validator.maskify(number, "*", 4);
+  number.innerHTML = coverNumber;
+}
 
-  //Se captura el evento
+//Se captura el evento
 btn.addEventListener("click", printValidation);
-/*btnSee.addEventListener("click",observetheCard);*/
-console.log(validator);
+btnSee.addEventListener("click", observetheCard);
+cardNumber.addEventListener("keypress", observetheCard);
