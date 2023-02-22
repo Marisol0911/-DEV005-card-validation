@@ -14,13 +14,15 @@ const validator = {
         if (multiplication >= 10) {
           let remainder = 0;
           let sumOfDigits = 0;
-          while (number) {
-            remainder = number % 10;
+
+          while (multiplication) {
+            remainder = multiplication % 10;
             sumOfDigits = sumOfDigits + remainder;
-            number = Math.floor(number / 10);
+            multiplication = Math.floor(multiplication / 10);
           }
+
           positionSum += sumOfDigits;
-          console.log("valor a sumar" + positionSum);
+          console.log("valor a sumar " + sumOfDigits);
         } else {
           positionSum += multiplication;
           console.log("valor a sumar" + positionSum);
