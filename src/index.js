@@ -20,3 +20,16 @@ function printValidation() {
 
 //Se captura el evento
 btn.addEventListener("click", printValidation);
+const numberr = document.getElementById("number");
+numberr.addEventListener("keyup", (event) => {
+  const num = event.target.value;
+  event.target.value = num.replace(/ /g, "");
+
+  /*let textoAmostrar = "";
+  if (texto !== "") {
+    textoAmostrar = texto;
+  } else {
+    textoAmostrar = "Input vacio";
+  }
+  document.getElementById("mostrar-text").innerHTML = textoAmostrar*/
+});
