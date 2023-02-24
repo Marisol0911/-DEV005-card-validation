@@ -7,11 +7,13 @@ const btn = document.getElementById("btnPay");
 
 function printValidation() {
   const cardNumber = number.value;
-  const validateCard = validator.isValid(cardNumber);
-  if (validateCard === 0) {
+  const isValid = validator.isValid(cardNumber);
+  if (isValid) {
     result.innerHTML = "Tu tarjeta es valida";
+    result.style.backgroundColor = "green";
   } else {
     result.innerHTML = "Tu tarjeta es invalida";
+    result.style.backgroundColor = "red";
   }
 
   const coverNumber = validator.maskify(cardNumber, "*", 4);
@@ -24,12 +26,4 @@ const numberr = document.getElementById("number");
 numberr.addEventListener("keyup", (event) => {
   const num = event.target.value;
   event.target.value = num.replace(/ /g, "");
-
-  /*let textoAmostrar = "";
-  if (texto !== "") {
-    textoAmostrar = texto;
-  } else {
-    textoAmostrar = "Input vacio";
-  }
-  document.getElementById("mostrar-text").innerHTML = textoAmostrar*/
 });

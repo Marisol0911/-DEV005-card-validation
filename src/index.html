@@ -6,31 +6,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>VALIDAR TARJETA</h1>
-      <p></p>
-    </header>
+    <header></header>
 
     <main>
       <form action="" id="form">
-        <input type="text" placeholder="name" id="" />
-        <input type="text" placeholder="number" id="number" />
+        <h1>VALIDAR TARJETA</h1>
+        <label>Nombre: </label>
+        <input type="text" placeholder="Ingresa tú nombre" id="" />
+        <label> Número de tarjeta:</label>
+        <input
+          type="text"
+          placeholder="Ingresa tú número de tarjeta"
+          id="number"
+          pattern="[0-9]"
+        />
         <button type="button" id="btnPay">Validar</button>
       </form>
 
       <h3 id="result"></h3>
 
       <h4 id="mascara"></h4>
-
-      <div class="ImgTarjetas">
-        <div class="logo">
-          <img src="Imag/logoAmerica.png" alt="logoAmerica" sizes="40px" />
-        </div>
-        <div class="logo">
-          <img src="Imag/logoMasterCard.png" alt="logoMasterCard" />
-        </div>
-        <div class="logo"><img src="Imag/logoVisa.png" alt="LogoVisa" /></div>
-      </div>
     </main>
     <footer>Todos los derechos reservados</footer>
     <script src="index.js" type="module"></script>

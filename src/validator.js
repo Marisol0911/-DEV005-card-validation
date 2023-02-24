@@ -29,7 +29,11 @@ const validator = {
 
     const final = positionSum % 10;
 
-    return final;
+    if (final === 0) {
+      return true;
+    } else {
+      return false;
+    }
   },
 
   maskify: function (string, mask, numberOfDigits) {
