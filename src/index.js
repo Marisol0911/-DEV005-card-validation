@@ -9,10 +9,10 @@ function printValidation() {
   const cardNumber = number.value;
   const isValid = validator.isValid(cardNumber);
   if (isValid) {
-    result.innerHTML = "Tu tarjeta es valida";
+    result.innerHTML = "Tu tarjeta es válida";
     result.style.backgroundColor = "green";
   } else {
-    result.innerHTML = "Tu tarjeta es invalida";
+    result.innerHTML = "Tu tarjeta es inválida";
     result.style.backgroundColor = "red";
   }
 
