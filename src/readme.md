@@ -8,3 +8,4 @@ Para hacer la lógica de javaScript primero se analizó cómo era su estructura 
 La manipulación del DOM se definió bien el árbol del HTML para así definir unos ID y poder manipularlos con document.getElementById,
 
 para los eventos se utilizó addEventListener se fue creando los eventos según las necesidades del botón validar
+mmmbabbababababababab
