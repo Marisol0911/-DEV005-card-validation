@@ -1,6 +1,5 @@
 * {
   background-color: 615FE8;
-  box-sizing: border-boxn;
 }
 form > h1 {
   color: rgb(255, 255, 255);
@@ -45,16 +44,25 @@ button:hover {
   background-color: #18353e;
   color: white;
 }
+/*#validatio {
+  font-size: 50px white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 6px;
+  margin: 20px;
+
+}*/
 #validatio {
   font-size: 50px white;
+  text-align: center;
   width: 100%;
-  padding: 150px 30px 30px;
+  max-width: 700px;
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
-
 footer {
   text-align: center;
 }
