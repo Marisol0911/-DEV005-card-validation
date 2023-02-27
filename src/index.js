@@ -16,7 +16,7 @@ function printValidation() {
     result.style.backgroundColor = "red";
   }
 
-  const coverNumber = validator.maskify(cardNumber, "*", 4);
+  const coverNumber = validator.maskify(cardNumber, "#", 4);
   number.value = coverNumber;
 }
 

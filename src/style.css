@@ -45,9 +45,14 @@ button:hover {
   background-color: #18353e;
   color: white;
 }
-#result {
-  text-align: center;
-  font-size: 30px;
+#validatio {
+  font-size: 50px white;
+  width: 100%;
+  padding: 150px 30px 30px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 
 footer {
